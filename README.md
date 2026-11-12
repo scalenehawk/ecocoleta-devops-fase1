@@ -29,6 +29,7 @@ python -m unittest discover -s tests -v
 - `.github/workflows/ci.yml`: testes, verificação sintática e validação do CloudFormation a cada push e pull request.
 - `infra/template.yaml`: recursos de API Gateway, Lambda, DynamoDB e permissões.
 - `scripts/package.py`: gera o ZIP da função Lambda para publicação em S3.
+- `scripts/check_package.py`: verifica a integridade e o conteúdo do pacote gerado.
 
 ## Publicação
 

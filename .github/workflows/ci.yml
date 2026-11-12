@@ -22,3 +22,7 @@ jobs:
         run: python -m pip install cfn-lint==1.60.0
       - name: Validar infraestrutura
         run: cfn-lint infra/template.yaml
+      - name: Empacotar função Lambda
+        run: python scripts/package.py
+      - name: Testar pacote gerado
+        run: python scripts/check_package.py
