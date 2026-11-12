@@ -26,7 +26,7 @@ python -m unittest discover -s tests -v
 - `src/app.py`: validação, rotas e respostas HTTP.
 - `src/repository.py`: acesso à tabela DynamoDB.
 - `tests/`: casos de sucesso e erro com repositório em memória.
-- `.github/workflows/ci.yml`: testes e verificação sintática a cada push e pull request.
+- `.github/workflows/ci.yml`: testes, verificação sintática e validação do CloudFormation a cada push e pull request.
 - `infra/template.yaml`: recursos de API Gateway, Lambda, DynamoDB e permissões.
 - `scripts/package.py`: gera o ZIP da função Lambda para publicação em S3.
 
